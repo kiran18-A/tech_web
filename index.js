@@ -25,8 +25,8 @@ app.post("/contact", async (req, res) => {
     
     const { name, email, mobile_number, message } = req.body;
     await insertContact(name, email, mobile_number, message);
-    await sendContactEmail(name, email);
     res.redirect("/");
+    await sendContactEmail(name, email);
 });
 
 app.get("/login", (req, res) => {
