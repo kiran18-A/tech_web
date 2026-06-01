@@ -22,6 +22,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="login">Manage</a></li>
       </ul>
     </nav>
   </header>
@@ -134,24 +135,15 @@
     <div class="container">
       <h2>Contact Us</h2>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Your Phone Number" required>
-        <textarea rows="5" placeholder="Your Message"></textarea>
+      <form action="/contact" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="mobile_number" placeholder="Your Phone Number" required>
+        <textarea rows="5" name="message" placeholder="Your Message"></textarea>
 
         <button type="submit">Send Message</button>
       </form>
     </div>
   </section>
-   <div id="social">
-        <a href="https://github.com/kiran18-A"><img class="social" style="border-radius: 50%;" height="60px" src="github.png" alt="facebok"></a>
-        <a href="https://instagram.com/kiranaglawepatil?igshid=NzZlODBkYWE4Ng=="><img class="social" style="border-radius: 50%;" height="60px" src="insta.png" alt="instagram"></a>
-        <a href="#"><img class="social" style="border-radius: 50%;" height="60px" src="fac.png" alt="facebok"></a>
-        <a href="https://www.linkedin.com/in/kiran-aglawe-1909a7287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="social" style="border-radius: 50%;" height="60px" src="link.png" alt="link"></a>
-        <a href="https://www.google.com/search?q=facebook+login&oq=face&gs_lcrp=EgZjaHJvbWUqDQgDEAAYgwEYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyCQgCEEUYORiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDIKCAUQABixAxiABDIHCAYQABiABDIGCAcQBRhA0gEINzY1NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-    <img class="social" style="border-radius: 40%;" height="30px" src="fac.png" alt="facebook"></a>
-      
-    </div>
 </body>
 </html>
