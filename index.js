@@ -72,8 +72,7 @@ app.post("/mark_contacted/:id", async (req, res) => {
     const contactId = req.params.id;
     console.log("Contact ID to mark as contacted:", contactId);
     const single_contact = await getById(contactId);
-    console.log(single_contact);
     await sendinfoEmail(single_contact.name, single_contact.email);
-    await markAsContacted(contactId);
     res.redirect("/manage");
+    await markAsContacted(contactId);
 });
